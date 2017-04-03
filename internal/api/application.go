@@ -45,9 +45,6 @@ func (a *ApplicationAPI) Create(ctx context.Context, req *pb.CreateApplicationRe
 		ADRInterval:        req.AdrInterval,
 		InstallationMargin: req.InstallationMargin,
 	}
-	if req.ChannelListID > 0 {
-		app.ChannelListID = &req.ChannelListID
-	}
 
 	if err := storage.CreateApplication(a.ctx.DB, &app); err != nil {
 		return nil, errToRPCError(err)
@@ -84,10 +81,6 @@ func (a *ApplicationAPI) Get(ctx context.Context, req *pb.GetApplicationRequest)
 		InstallationMargin: app.InstallationMargin,
 	}
 
-	if app.ChannelListID != nil {
-		resp.ChannelListID = *app.ChannelListID
-	}
-
 	return &resp, nil
 }
 
@@ -115,11 +108,6 @@ func (a *ApplicationAPI) Update(ctx context.Context, req *pb.UpdateApplicationRe
 	app.RelaxFCnt = req.RelaxFCnt
 	app.ADRInterval = req.AdrInterval
 	app.InstallationMargin = req.InstallationMargin
-	if req.ChannelListID > 0 {
-		app.ChannelListID = &req.ChannelListID
-	} else {
-		app.ChannelListID = nil
-	}
 
 	err = storage.UpdateApplication(a.ctx.DB, app)
 	if err != nil {
@@ -200,10 +188,6 @@ func (a *ApplicationAPI) List(ctx context.Context, req *pb.ListApplicationReques
 			RelaxFCnt:          app.RelaxFCnt,
 			AdrInterval:        app.ADRInterval,
 			InstallationMargin: app.InstallationMargin,
-		}
-
-		if app.ChannelListID != nil {
-			item.ChannelListID = *app.ChannelListID
 		}
 
 		resp.Result = append(resp.Result, &item)

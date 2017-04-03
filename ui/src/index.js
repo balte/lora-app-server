@@ -18,11 +18,6 @@ import UpdateNode from './views/nodes/UpdateNode';
 import CreateNode from "./views/nodes/CreateNode";
 import ActivateNode from "./views/nodes/ActivateNode";
 
-// channels
-import ChannelLists from "./views/channels/ChannelLists";
-import ChannelListDetails from "./views/channels/ChannelListDetails";
-import CreateChannelList from "./views/channels/CreateChannelList";
-
 // users
 import Login from "./views/users/Login";
 import CreateUser from "./views/users/CreateUser";
@@ -62,9 +57,6 @@ ReactDOM.render(
       <Route path="applications/:applicationID/users/create" component={CreateApplicationUser}></Route>
       <Route path="applications/:applicationID/users/:userID/edit" component={UpdateApplicationUser}></Route>
       <Route path="applications/:applicationID" component={ListNodes}></Route>
-      <Route path="channels" component={ChannelLists}></Route>
-      <Route path="channels/create" component={CreateChannelList}></Route>
-      <Route path="channels/:id" component={ChannelListDetails}></Route>
       <Route path="login" component={Login}></Route>
       <Route path="users/create" component={CreateUser}></Route>
       <Route path="users/:userID/edit" component={UpdateUser}></Route>

@@ -78,7 +78,6 @@ class ListApplications extends Component {
           <div className="clearfix">
             <div className="btn-group pull-right" role="group" aria-label="...">
               <Link to="/applications/create"><button type="button" className="btn btn-default">Create application</button></Link> &nbsp;
-              <Link to="/channels"><button type="button" className="btn btn-default">Channel lists</button></Link>
             </div>
           </div>
         </div>

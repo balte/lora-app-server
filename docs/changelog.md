@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.8.0
+
+**Features & Changes:**
+
+* Channel-lists have been removed. Extra channels (if supported by the ISM
+  band) are now managed by LoRa Server configuration.
+
+**Note:** when upgrading to this version with `--db-automigrate` /
+`DB_AUTOMIGRATE` set, channel-list data will be removed.
+
 ## 0.7.2
 
 **Bugfixes:**

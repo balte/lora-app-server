@@ -37,7 +37,7 @@ type CreateGatewayRequest struct {
 func (m *CreateGatewayRequest) Reset()                    { *m = CreateGatewayRequest{} }
 func (m *CreateGatewayRequest) String() string            { return proto.CompactTextString(m) }
 func (*CreateGatewayRequest) ProtoMessage()               {}
-func (*CreateGatewayRequest) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{0} }
+func (*CreateGatewayRequest) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{0} }
 
 func (m *CreateGatewayRequest) GetMac() string {
 	if m != nil {
@@ -87,7 +87,7 @@ type CreateGatewayResponse struct {
 func (m *CreateGatewayResponse) Reset()                    { *m = CreateGatewayResponse{} }
 func (m *CreateGatewayResponse) String() string            { return proto.CompactTextString(m) }
 func (*CreateGatewayResponse) ProtoMessage()               {}
-func (*CreateGatewayResponse) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{1} }
+func (*CreateGatewayResponse) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{1} }
 
 type GetGatewayRequest struct {
 	// Hex encoded mac address of the node.
@@ -97,7 +97,7 @@ type GetGatewayRequest struct {
 func (m *GetGatewayRequest) Reset()                    { *m = GetGatewayRequest{} }
 func (m *GetGatewayRequest) String() string            { return proto.CompactTextString(m) }
 func (*GetGatewayRequest) ProtoMessage()               {}
-func (*GetGatewayRequest) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{2} }
+func (*GetGatewayRequest) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{2} }
 
 func (m *GetGatewayRequest) GetMac() string {
 	if m != nil {
@@ -132,7 +132,7 @@ type GetGatewayResponse struct {
 func (m *GetGatewayResponse) Reset()                    { *m = GetGatewayResponse{} }
 func (m *GetGatewayResponse) String() string            { return proto.CompactTextString(m) }
 func (*GetGatewayResponse) ProtoMessage()               {}
-func (*GetGatewayResponse) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{3} }
+func (*GetGatewayResponse) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{3} }
 
 func (m *GetGatewayResponse) GetMac() string {
 	if m != nil {
@@ -212,7 +212,7 @@ type DeleteGatewayRequest struct {
 func (m *DeleteGatewayRequest) Reset()                    { *m = DeleteGatewayRequest{} }
 func (m *DeleteGatewayRequest) String() string            { return proto.CompactTextString(m) }
 func (*DeleteGatewayRequest) ProtoMessage()               {}
-func (*DeleteGatewayRequest) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{4} }
+func (*DeleteGatewayRequest) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{4} }
 
 func (m *DeleteGatewayRequest) GetMac() string {
 	if m != nil {
@@ -227,7 +227,7 @@ type DeleteGatewayResponse struct {
 func (m *DeleteGatewayResponse) Reset()                    { *m = DeleteGatewayResponse{} }
 func (m *DeleteGatewayResponse) String() string            { return proto.CompactTextString(m) }
 func (*DeleteGatewayResponse) ProtoMessage()               {}
-func (*DeleteGatewayResponse) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{5} }
+func (*DeleteGatewayResponse) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{5} }
 
 type ListGatewayRequest struct {
 	// Max number of nodes to return in the result-set.
@@ -239,7 +239,7 @@ type ListGatewayRequest struct {
 func (m *ListGatewayRequest) Reset()                    { *m = ListGatewayRequest{} }
 func (m *ListGatewayRequest) String() string            { return proto.CompactTextString(m) }
 func (*ListGatewayRequest) ProtoMessage()               {}
-func (*ListGatewayRequest) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{6} }
+func (*ListGatewayRequest) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{6} }
 
 func (m *ListGatewayRequest) GetLimit() int32 {
 	if m != nil {
@@ -265,7 +265,7 @@ type ListGatewayResponse struct {
 func (m *ListGatewayResponse) Reset()                    { *m = ListGatewayResponse{} }
 func (m *ListGatewayResponse) String() string            { return proto.CompactTextString(m) }
 func (*ListGatewayResponse) ProtoMessage()               {}
-func (*ListGatewayResponse) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{7} }
+func (*ListGatewayResponse) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{7} }
 
 func (m *ListGatewayResponse) GetTotalCount() int32 {
 	if m != nil {
@@ -299,7 +299,7 @@ type UpdateGatewayRequest struct {
 func (m *UpdateGatewayRequest) Reset()                    { *m = UpdateGatewayRequest{} }
 func (m *UpdateGatewayRequest) String() string            { return proto.CompactTextString(m) }
 func (*UpdateGatewayRequest) ProtoMessage()               {}
-func (*UpdateGatewayRequest) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{8} }
+func (*UpdateGatewayRequest) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{8} }
 
 func (m *UpdateGatewayRequest) GetMac() string {
 	if m != nil {
@@ -349,7 +349,7 @@ type UpdateGatewayResponse struct {
 func (m *UpdateGatewayResponse) Reset()                    { *m = UpdateGatewayResponse{} }
 func (m *UpdateGatewayResponse) String() string            { return proto.CompactTextString(m) }
 func (*UpdateGatewayResponse) ProtoMessage()               {}
-func (*UpdateGatewayResponse) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{9} }
+func (*UpdateGatewayResponse) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{9} }
 
 type GatewayStats struct {
 	// Timestamp of the (aggregated) measurement.
@@ -367,7 +367,7 @@ type GatewayStats struct {
 func (m *GatewayStats) Reset()                    { *m = GatewayStats{} }
 func (m *GatewayStats) String() string            { return proto.CompactTextString(m) }
 func (*GatewayStats) ProtoMessage()               {}
-func (*GatewayStats) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{10} }
+func (*GatewayStats) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{10} }
 
 func (m *GatewayStats) GetTimestamp() string {
 	if m != nil {
@@ -419,7 +419,7 @@ type GetGatewayStatsRequest struct {
 func (m *GetGatewayStatsRequest) Reset()                    { *m = GetGatewayStatsRequest{} }
 func (m *GetGatewayStatsRequest) String() string            { return proto.CompactTextString(m) }
 func (*GetGatewayStatsRequest) ProtoMessage()               {}
-func (*GetGatewayStatsRequest) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{11} }
+func (*GetGatewayStatsRequest) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{11} }
 
 func (m *GetGatewayStatsRequest) GetMac() string {
 	if m != nil {
@@ -456,7 +456,7 @@ type GetGatewayStatsResponse struct {
 func (m *GetGatewayStatsResponse) Reset()                    { *m = GetGatewayStatsResponse{} }
 func (m *GetGatewayStatsResponse) String() string            { return proto.CompactTextString(m) }
 func (*GetGatewayStatsResponse) ProtoMessage()               {}
-func (*GetGatewayStatsResponse) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{12} }
+func (*GetGatewayStatsResponse) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{12} }
 
 func (m *GetGatewayStatsResponse) GetResult() []*GatewayStats {
 	if m != nil {
@@ -730,9 +730,9 @@ var _Gateway_serviceDesc = grpc.ServiceDesc{
 	Metadata: "gateway.proto",
 }
 
-func init() { proto.RegisterFile("gateway.proto", fileDescriptor6) }
+func init() { proto.RegisterFile("gateway.proto", fileDescriptor5) }
 
-var fileDescriptor6 = []byte{
+var fileDescriptor5 = []byte{
 	// 698 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xd4, 0x55, 0xcd, 0x6e, 0xd3, 0x4e,
 	0x10, 0x97, 0x9b, 0x8f, 0xa6, 0xd3, 0xf6, 0xff, 0x6f, 0xa7, 0x5f, 0xae, 0x5b, 0x55, 0xc5, 0x12,

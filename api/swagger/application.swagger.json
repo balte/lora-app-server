@@ -392,11 +392,6 @@
           "format": "int64",
           "description": "RX1 data-rate offset."
         },
-        "channelListID": {
-          "type": "string",
-          "format": "int64",
-          "description": "Channel-list ID used for CFlist (see LoRaWAN regional parameters if this applies to your region)."
-        },
         "rxWindow": {
           "$ref": "#/definitions/apiRXWindow",
           "description": "RX window to use."
@@ -494,11 +489,6 @@
           "type": "integer",
           "format": "int64",
           "description": "RX1 data-rate offset."
-        },
-        "channelListID": {
-          "type": "string",
-          "format": "int64",
-          "description": "Channel-list ID used for CFlist (see LoRaWAN regional parameters if this applies to your region)."
         },
         "rxWindow": {
           "$ref": "#/definitions/apiRXWindow",
@@ -657,11 +647,6 @@
           "type": "integer",
           "format": "int64",
           "description": "RX1 data-rate offset."
-        },
-        "channelListID": {
-          "type": "string",
-          "format": "int64",
-          "description": "Channel-list ID used for CFlist (see LoRaWAN regional parameters if this applies to your region)."
         },
         "rxWindow": {
           "$ref": "#/definitions/apiRXWindow",
